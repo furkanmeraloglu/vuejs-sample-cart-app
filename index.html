@@ -22,7 +22,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">iPone</a>
+                        <a class="nav-link active" aria-current="page" href="#">iPhone</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">iPad</a>
@@ -32,7 +32,7 @@
             </div>
         </div>
     </nav>
-    <product :premium="premium" :iphone="iphone" @add-to-cart="updateCart"></product>
+    <product :premium="premium" :iphone="iphone" @add-to-cart="updateCart" @remove-from-cart="removeFromCart"></product>
 </main>
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
